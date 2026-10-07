@@ -1,0 +1,568 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "f357a4100be39d710b09bdaffd3eeda0",
+    "entities": [
+      {
+        "tableName": "countries",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`uuid` TEXT NOT NULL, `name_common` TEXT NOT NULL, `name_official` TEXT NOT NULL, `name_alternates` TEXT NOT NULL, `name_native` TEXT NOT NULL, `alpha2` TEXT, `alpha3` TEXT, `ccn3` TEXT, `cioc` TEXT, `fifa` TEXT, `fips` TEXT, `gec` TEXT, `search_text` TEXT NOT NULL, `capital_name` TEXT, `capital_lat` REAL, `capital_lng` REAL, `capitals` TEXT NOT NULL, `flag_emoji` TEXT, `flag_png` TEXT, `flag_svg` TEXT, `flag_description` TEXT, `flag_dominant` TEXT, `flag_prominent` TEXT, `flag_vibrant` TEXT, `flag_muted` TEXT, `region` TEXT, `subregion` TEXT, `continents` TEXT NOT NULL, `landlocked` INTEGER, `borders` TEXT NOT NULL, `area_km2` REAL, `area_mi2` REAL, `lat` REAL, `lng` REAL, `population` INTEGER, `currencies` TEXT NOT NULL, `languages` TEXT NOT NULL, `calling_codes` TEXT NOT NULL, `tlds` TEXT NOT NULL, `timezones` TEXT NOT NULL, `car_signs` TEXT NOT NULL, `driving_side` TEXT, `postal_format` TEXT, `start_of_week` TEXT, `government_type` TEXT, `measurement_system` TEXT, `gini_latest_year` INTEGER, `gini_latest` REAL, `gini_json` TEXT NOT NULL, `sovereign` INTEGER NOT NULL, `un_member` INTEGER NOT NULL, `un_observer` INTEGER NOT NULL, `dependency` INTEGER NOT NULL, `disputed` INTEGER NOT NULL, `dependency_type` TEXT, `iso_status` TEXT, `m_un` INTEGER NOT NULL, `m_eu` INTEGER NOT NULL, `m_eurozone` INTEGER NOT NULL, `m_schengen` INTEGER NOT NULL, `m_nato` INTEGER NOT NULL, `m_commonwealth` INTEGER NOT NULL, `m_oecd` INTEGER NOT NULL, `m_g7` INTEGER NOT NULL, `m_g20` INTEGER NOT NULL, `m_brics` INTEGER NOT NULL, `m_opec` INTEGER NOT NULL, `m_african_union` INTEGER NOT NULL, `m_asean` INTEGER NOT NULL, `m_arab_league` INTEGER NOT NULL, `description_short` TEXT, `description_long` TEXT, `link_wikipedia` TEXT, `link_official` TEXT, `link_google_maps` TEXT, `link_osm` TEXT, `last_updated_epoch` INTEGER, PRIMARY KEY(`uuid`))",
+        "fields": [
+          {
+            "fieldPath": "uuid",
+            "columnName": "uuid",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nameCommon",
+            "columnName": "name_common",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nameOfficial",
+            "columnName": "name_official",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nameAlternates",
+            "columnName": "name_alternates",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "nameNative",
+            "columnName": "name_native",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "alpha2",
+            "columnName": "alpha2",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "alpha3",
+            "columnName": "alpha3",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "ccn3",
+            "columnName": "ccn3",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "cioc",
+            "columnName": "cioc",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "fifa",
+            "columnName": "fifa",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "fips",
+            "columnName": "fips",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "gec",
+            "columnName": "gec",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "searchText",
+            "columnName": "search_text",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "capitalName",
+            "columnName": "capital_name",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "capitalLat",
+            "columnName": "capital_lat",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "capitalLng",
+            "columnName": "capital_lng",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "capitals",
+            "columnName": "capitals",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "flagEmoji",
+            "columnName": "flag_emoji",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "flagPng",
+            "columnName": "flag_png",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "flagSvg",
+            "columnName": "flag_svg",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "flagDescription",
+            "columnName": "flag_description",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "flagDominant",
+            "columnName": "flag_dominant",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "flagProminent",
+            "columnName": "flag_prominent",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "flagVibrant",
+            "columnName": "flag_vibrant",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "flagMuted",
+            "columnName": "flag_muted",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "region",
+            "columnName": "region",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "subregion",
+            "columnName": "subregion",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "continents",
+            "columnName": "continents",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "landlocked",
+            "columnName": "landlocked",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "borders",
+            "columnName": "borders",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "areaKm2",
+            "columnName": "area_km2",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "areaMi2",
+            "columnName": "area_mi2",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "lat",
+            "columnName": "lat",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "lng",
+            "columnName": "lng",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "population",
+            "columnName": "population",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "currencies",
+            "columnName": "currencies",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "languages",
+            "columnName": "languages",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "callingCodes",
+            "columnName": "calling_codes",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "tlds",
+            "columnName": "tlds",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "timezones",
+            "columnName": "timezones",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "carSigns",
+            "columnName": "car_signs",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "drivingSide",
+            "columnName": "driving_side",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "postalFormat",
+            "columnName": "postal_format",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "startOfWeek",
+            "columnName": "start_of_week",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "governmentType",
+            "columnName": "government_type",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "measurementSystem",
+            "columnName": "measurement_system",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "giniLatestYear",
+            "columnName": "gini_latest_year",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "giniLatest",
+            "columnName": "gini_latest",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "giniJson",
+            "columnName": "gini_json",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sovereign",
+            "columnName": "sovereign",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "unMember",
+            "columnName": "un_member",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "unObserver",
+            "columnName": "un_observer",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dependency",
+            "columnName": "dependency",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "disputed",
+            "columnName": "disputed",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dependencyType",
+            "columnName": "dependency_type",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "isoStatus",
+            "columnName": "iso_status",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "mUn",
+            "columnName": "m_un",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mEu",
+            "columnName": "m_eu",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mEurozone",
+            "columnName": "m_eurozone",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mSchengen",
+            "columnName": "m_schengen",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mNato",
+            "columnName": "m_nato",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mCommonwealth",
+            "columnName": "m_commonwealth",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mOecd",
+            "columnName": "m_oecd",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mG7",
+            "columnName": "m_g7",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mG20",
+            "columnName": "m_g20",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mBrics",
+            "columnName": "m_brics",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mOpec",
+            "columnName": "m_opec",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mAfricanUnion",
+            "columnName": "m_african_union",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mAsean",
+            "columnName": "m_asean",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mArabLeague",
+            "columnName": "m_arab_league",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "descriptionShort",
+            "columnName": "description_short",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "descriptionLong",
+            "columnName": "description_long",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "linkWikipedia",
+            "columnName": "link_wikipedia",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "linkOfficial",
+            "columnName": "link_official",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "linkGoogleMaps",
+            "columnName": "link_google_maps",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "linkOsm",
+            "columnName": "link_osm",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "lastUpdatedEpoch",
+            "columnName": "last_updated_epoch",
+            "affinity": "INTEGER"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "uuid"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_countries_name_common",
+            "unique": false,
+            "columnNames": [
+              "name_common"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_countries_name_common` ON `${TABLE_NAME}` (`name_common`)"
+          },
+          {
+            "name": "index_countries_alpha3",
+            "unique": false,
+            "columnNames": [
+              "alpha3"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_countries_alpha3` ON `${TABLE_NAME}` (`alpha3`)"
+          },
+          {
+            "name": "index_countries_region",
+            "unique": false,
+            "columnNames": [
+              "region"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_countries_region` ON `${TABLE_NAME}` (`region`)"
+          },
+          {
+            "name": "index_countries_subregion",
+            "unique": false,
+            "columnNames": [
+              "subregion"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_countries_subregion` ON `${TABLE_NAME}` (`subregion`)"
+          }
+        ]
+      },
+      {
+        "tableName": "favorites",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`country_uuid` TEXT NOT NULL, `added_at` INTEGER NOT NULL, PRIMARY KEY(`country_uuid`), FOREIGN KEY(`country_uuid`) REFERENCES `countries`(`uuid`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "countryUuid",
+            "columnName": "country_uuid",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "addedAt",
+            "columnName": "added_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "country_uuid"
+          ]
+        },
+        "foreignKeys": [
+          {
+            "table": "countries",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "country_uuid"
+            ],
+            "referencedColumns": [
+              "uuid"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "quiz_results",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `mode` TEXT NOT NULL, `score` INTEGER NOT NULL, `total` INTEGER NOT NULL, `best_streak` INTEGER NOT NULL, `played_at` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mode",
+            "columnName": "mode",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "score",
+            "columnName": "score",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "total",
+            "columnName": "total",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bestStreak",
+            "columnName": "best_streak",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "playedAt",
+            "columnName": "played_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'f357a4100be39d710b09bdaffd3eeda0')"
+    ]
+  }
+}

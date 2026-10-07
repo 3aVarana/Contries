@@ -2,10 +2,11 @@ package com.example.contris.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val Purple80 = Color(0xFFD0BCFF)
-val PurpleGrey80 = Color(0xFFCCC2DC)
-val Pink80 = Color(0xFFEFB8C8)
+// Brand seed: deep teal with a warm violet tertiary.
+val BrandPrimary = Color(0xFF006874)
+val BrandSecondary = Color(0xFF4A6267)
+val BrandTertiary = Color(0xFF525E7D)
 
-val Purple40 = Color(0xFF6650a4)
-val PurpleGrey40 = Color(0xFF625b71)
-val Pink40 = Color(0xFF7D5260)
+val BrandPrimaryDark = Color(0xFF4FD8EB)
+val BrandSecondaryDark = Color(0xFFB1CBD0)
+val BrandTertiaryDark = Color(0xFFBAC6EA)

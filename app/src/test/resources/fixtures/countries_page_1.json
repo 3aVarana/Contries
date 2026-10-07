@@ -1,0 +1,37 @@
+{
+  "data": {
+    "objects": [
+      {
+        "uuid": "5e4b3c2a-0006-4a1b-9c1d-000000000006",
+        "names": { "common": "United States", "official": "United States of America", "alternates": ["USA", "US"], "native": { "eng": { "common": "United States", "official": "United States of America" } } },
+        "codes": { "alpha_2": "US", "alpha_3": "USA", "ccn3": "840", "cioc": "USA", "fifa": "USA" },
+        "capitals": [{ "name": "Washington, D.C.", "coordinates": { "lat": 38.89, "lng": -77.05 }, "attributes": { "primary": true } }],
+        "flag": { "emoji": "🇺🇸", "url_png": "https://flagcdn.com/w640/us.png", "url_svg": "https://flagcdn.com/us.svg", "colors": { "dominant": "#b22234", "prominent": "#3c3b6e", "swatches": { "vibrant": "#b22234" } } },
+        "region": "Americas",
+        "subregion": "North America",
+        "continents": ["North America"],
+        "landlocked": false,
+        "borders": ["CAN", "MEX"],
+        "area": { "kilometers": 9372610, "miles": 3618783 },
+        "coordinates": { "lat": 38, "lng": -97 },
+        "population": 345426571,
+        "currencies": [{ "code": "USD", "name": "United States dollar", "symbol": "$" }],
+        "languages": [{ "name": "English", "native_name": "English", "bcp47": "en", "iso639_3": "eng" }],
+        "calling_codes": ["+1"],
+        "tlds": [".us"],
+        "timezones": ["UTC-12:00", "UTC-11:00", "UTC-10:00", "UTC-09:00", "UTC-08:00", "UTC-07:00", "UTC-06:00", "UTC-05:00", "UTC-04:00", "UTC+10:00", "UTC+12:00"],
+        "cars": { "driving_side": "right", "signs": ["USA"] },
+        "postal_code": { "format": "#####-####" },
+        "date": { "start_of_week": "sunday" },
+        "economy": { "gini_coefficient": { "2018": 41.4 } },
+        "government_type": "Federal presidential constitutional republic",
+        "classification": { "sovereign": true, "un_member": true, "dependency": false, "disputed": false },
+        "memberships": { "un": true, "nato": true, "oecd": true, "g7": true, "g20": true },
+        "links": { "wikipedia": "https://en.wikipedia.org/wiki/United_States" },
+        "units": { "measurement_system": "imperial" },
+        "_meta": { "lastUpdatedTimestamp": 1759276800 }
+      }
+    ],
+    "meta": { "total": 7, "count": 1, "limit": 100, "offset": 100, "more": false, "request_id": "fixture-1" }
+  }
+}
